@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="main">Ticket Management System</h1>
+    <div id="item">
+        <div id="form">
+            <form>
+            <h1>Ticket Management System</h1>
+            <input type="text" id="name1" placeholder="Name">
+            <input type="text" id="seat" placeholder="Seat No.">
+            <input type="date" id="date" >
+            <input type="text" id="from" placeholder="From Location">
+            <input type="text" id="to" placeholder="To Location">
+            <div class="btn" id="book-ticket" onclick="check()">Book Ticket</div>
+            <div class="btn" id="view-history" onclick="showHistory()">View History</div>
+        <div class="history" id="history-container">
+        <div id="add-ticket">
+            <h3>Ticket History</h3>
+            <table>
+                <tr id="head"><td>Ticket ID:</td><td>Name</td><td>Seat No:</td><td>Date</td><td>From Location</td><td>To Location</td><td>Action</td></tr>
+                <tr id="show">
+            </tr>
+            <tbody id="history"></tbody></table>
+        </div>
+        </form>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>    
+</html>
